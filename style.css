@@ -1,0 +1,244 @@
+:root {
+    --background: #040122;
+    --font: #f0f7f2;
+    --highlight: #a00000;
+    --Button: #ff0000;
+    --form: #494357;
+}
+
+body {
+    background-color: var(--font);
+    color: var(--background);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    padding: 1.5rem;
+   
+}
+
+main {
+    max-width: 65%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--highlight);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.chamada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+img {
+    max-width: 250px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.aprenda {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--highlight);
+}
+
+ul {
+    font-size: 1.5rem;
+}
+
+/* Estilizando o formulário */
+.formulario {
+    background-color: var(--form);
+    padding: 2rem;
+    border-radius: 8px;  /* Bordas arredondadas */
+    width: 80%;
+     /* Limita o tamanho máximo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    margin: 2rem auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaço entre os campos */
+    font-size: 1.3rem;
+    
+}
+
+.cadastro {
+    color: var(--highlight);
+}
+
+label {
+    font-weight: bold;
+    color: var(--font);
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--highlight);
+    border-radius: 5px;
+    outline: none;
+    width: 90%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: var(--Button); /* Cor do foco no campo */
+}
+
+button.inscreva {
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    background-color: var(--Button);
+    color: var(--background);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Botão ocupa toda a largura */
+    align-self: center;
+}
+
+button.inscreva:hover {
+    background-color: var(--highlight); /* Cor de hover do botão */
+}
+
+small {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+strong {
+    font-size: 1.5rem;
+    color: var(--highlight);
+}
+
+/* Estilo para o parágrafo abaixo do formulário */
+p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    /* Ajuste para tablets */
+    main {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduz o título em telas menores */
+    }
+
+    .chamada {
+        gap: 2rem;
+        flex-direction: column; /* Organiza os itens na coluna */
+    }
+
+    img {
+        max-width: 200px; /* Reduz o tamanho das imagens */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajuste para dispositivos de médio porte (como tablets em modo retrato) */
+    main {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho do título menor */
+    }
+
+    .chamada {
+        gap: 1rem;
+        flex-direction: column; /* Coloca os itens na coluna */
+    }
+
+    img {
+        max-width: 150px; /* Reduz ainda mais as imagens */
+    }
+
+    .formulario {
+        width: 80%; /* O formulário ocupa toda a largura disponível */
+        padding: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 90%;
+    }
+
+    button.inscreva {
+        width: 80%; /* Botão ocupa toda a largura */
+        align-self: center;
+    }
+
+    p {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste para dispositivos móveis */
+    main {
+        max-width: 95%; /* O conteúdo ocupa quase toda a tela */
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Título ainda menor para telas pequenas */
+    }
+
+    .chamada {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens */
+    }
+
+    img {
+        max-width: 120px; /* Imagens ainda menores */
+    }
+
+    .formulario {
+        width: 80%; /* O formulário ocupa toda a largura disponível */
+        padding: 1.2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        font-size: 1rem; /* Tamanho da fonte ajustado */
+        width: 90%;
+    }
+
+    button.inscreva {
+        width: 80%; /* Botão ocupa toda a largura */
+        align-self: center;
+    }
+
+    p {
+        font-size: 1rem; /* Texto ajustado para ficar legível */
+    }
+}

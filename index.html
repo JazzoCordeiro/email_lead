@@ -5,49 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Leitura Técnica em Inglês | Aprenda a Compreender Textos Técnicos com Facilidade</title>
     <meta name="description" content="Aprenda a ler textos técnicos em inglês com nosso curso especializado. Melhore sua fluência e compreensão de vocabulário técnico, ideal para profissionais e acadêmicos.">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <main>
+    <section class="chamada">  
+        <div>   
         <h1>Quer Aprender a Ler Textos Técnicos em Inglês com Facilidade?</h1>
-
         <p>Se você trabalha ou estuda em uma área que exige o domínio de inglês técnico, sabe o quanto pode ser desafiador entender textos especializados, como artigos científicos, manuais ou relatórios. Pensando nisso, criamos um <strong>curso de Leitura Técnica em Língua Inglesa</strong> que vai te ajudar a desenvolver habilidades essenciais para compreender qualquer conteúdo técnico, de maneira rápida e eficiente.</p>
-
-        <h2>Por que você deve se inscrever?</h2>
-        <ul>
-            <li>Aprenda a entender vocabulário técnico, mesmo que ainda não tenha total domínio do inglês.</li>
-            <li>Acesse estratégias práticas de leitura para textos mais complexos e desafiadores.</li>
-            <li>Descubra como melhorar sua fluência e compreensão ao ler em inglês, sem perder tempo!</li>
-        </ul>
-
-        <h2>Cadastre-se agora e receba:</h2>
+    </div>
+        <img src="./img/book.jpg">
+    </section>
+<p class="aprenda">Não perca mais tempo tentando entender textos técnicos sozinho!</p><br><br><br>
+<section>
+        <h1 class="cadastro">Cadastre-se agora e receba:</h1>
         <ul>
             <li>Conteúdos exclusivos sobre como melhorar sua leitura técnica em inglês.</li>
             <li>Dicas valiosas que você pode aplicar imediatamente no seu dia a dia.</li>
             <li>Descontos especiais e acesso antecipado ao nosso curso completo.</li>
         </ul>
-
-        <p><strong>Não perca mais tempo tentando entender textos técnicos sozinho!</strong></p>
-
+    </section>
+<section>
         <p>Deixe seu e-mail abaixo e seja o primeiro a receber informações sobre o curso, conteúdos gratuitos e ofertas especiais. Comece sua jornada para se tornar um expert em leitura técnica em inglês hoje mesmo!</p>
-
+<br>
+    <div class="formulario">
         <form id="formulario" action="https://script.google.com/macros/s/AKfycbwA-R4G3sRitKPIWf_zzhUclIEMTXgg1dQ6PzvYxVGOQ25ETRw01V4fqs2qaXQ4op0/exec" method="POST">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
     
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
-        <p><small>Seu e-mail está seguro conosco. Não compartilharemos suas informações com terceiros.</small></p>
-
-    
+           
         <label for="whatsapp">Número de WhatsApp:</label>
             <input type="tel" id="whatsapp" name="whatsapp" placeholder="Digite seu número com DDD (ex: 11999999999)" pattern="[0-9]{2}[0-9]{9}" required>
-    
-        <button type="submit">Quero Aprender AGORA!</button>
+            <button type="submit" class="inscreva">Quero Aprender AGORA!</button>
+            <br>
+            <p><small>Seus dados estão seguros conosco, eles serão usados exclusivamente para que entremos em contato com você. Não compartilharemos suas informações com terceiros.</small></p>
+        
+
+        <br><br>
+    </div>
         <p><strong>Vagas limitadas! Inscreva-se agora e garanta seu lugar no curso.</strong></p>
 
     </form>
-    
+</section>
+</main>
     <script>
         document.getElementById('formulario').onsubmit = async function(e) {
             e.preventDefault();
