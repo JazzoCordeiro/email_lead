@@ -1,14 +1,15 @@
 :root {
-    --background: #040122;
-    --font:rgb(240, 243, 247);
-    --highlight: #003968;
-    --Button: #0088d6;
+    --colorFont: #040122;
+    --colorBack:rgb(240, 243, 247);
+    --Button: #0015d6;
     --form: #a08bb880;
+    --formu: #a38cbb34;    
+    --destaque: #fff;
 }
 
 body {
-    background-color: var(--font);
-    color: var(--background);
+    background-color: var(--colorBack);
+    color: var(--colorFont);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -21,10 +22,12 @@ main {
     max-width: 65%;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--highlight);
+    border: 1px solid var(--colorFont);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     padding: 2rem;
     border-radius: 10px;
     margin: 0 auto; /* Garante que o main seja centralizado */
+    background-color: var(--destaque);
 }
 
 .chamada {
@@ -49,7 +52,7 @@ p {
 .aprenda {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--highlight);
+    color: var(--colorFont);
 }
 
 ul {
@@ -62,7 +65,8 @@ ul {
     padding: 2rem;
     border-radius: 8px;
     width: 80%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--formu);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     margin: 0 auto; /* Garante que o formulário seja centralizado */
 }
 
@@ -75,13 +79,13 @@ form {
 }
 
 .cadastro {
-    color: var(--highlight);
+    color: var(--colorFont);
     text-align: center;
 }
 
 label {
     font-weight: bold;
-    color: var(--font);
+    color: var(--colorBack);
 
 }
 
@@ -90,7 +94,7 @@ input[type="email"],
 input[type="tel"] {
     padding: 1rem;
     font-size: 1.1rem;
-    border: 2px solid var(--highlight);
+    border: 2px solid var(--colorFont);
     border-radius: 5px;
     outline: none;
     width: 90%;
@@ -106,7 +110,7 @@ button.inscreva {
     padding: 1.2rem;
     font-size: 1.3rem;
     background-color: var(--Button);
-    color: var(--font);
+    color: var(--colorBack);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -116,7 +120,7 @@ button.inscreva {
 }
 
 button.inscreva:hover {
-    background-color: var(--highlight); /* Cor de hover do botão */
+    background-color: var(--colorFont); /* Cor de hover do botão */
 }
 
 small {
@@ -126,7 +130,7 @@ small {
 
 strong {
     font-size: 1.5rem;
-    color: var(--highlight);
+    color: var(--colorFont);
 }
 
 /* Estilo para o parágrafo abaixo do formulário */
