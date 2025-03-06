@@ -1,9 +1,9 @@
 :root {
     --background: #040122;
-    --font: #f0f7f2;
-    --highlight: #a00000;
-    --Button: #ff0000;
-    --form: #494357;
+    --font:rgb(247, 243, 240);
+    --highlight: #680000;
+    --Button: #7c0000;
+    --form: #b88b9880;
 }
 
 body {
@@ -81,6 +81,7 @@ form {
 
 .cadastro {
     color: var(--highlight);
+    text-align: center;
 }
 
 label {
@@ -110,7 +111,7 @@ button.inscreva {
     padding: 1.2rem;
     font-size: 1.3rem;
     background-color: var(--Button);
-    color: var(--background);
+    color: var(--font);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -137,6 +138,8 @@ strong {
 p {
     text-align: center;
     margin-top: 2rem;
+    color:#040122;
+    font-size: small;
 }
 
 @media (max-width: 1024px) {
